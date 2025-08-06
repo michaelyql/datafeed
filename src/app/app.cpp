@@ -6,10 +6,12 @@
 
 namespace datafeed {
 
-App::App(const char* filename, const char* symbol):filename(filename), symbol(symbol) {}
+App::App(const char* data, const char* symbols) : 
+    _data(data), 
+    _symbols(symbols) {} 
 
 void App::start() {
     std::cout << "App running" << std::endl;
 }
 
-}
+} // namespace datafeed 

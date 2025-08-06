@@ -8,7 +8,7 @@ using namespace datafeed;
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
-        std::cout << "Usage: ./main <FILENAME> <SYMBOL>\n";
+        std::cout << "Usage: ./main <DATA_FILENAME> <STOCK_LOCATE_FILENAME>\n";
         exit(EXIT_FAILURE);
     }
     const char* filename = argv[1];

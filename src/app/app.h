@@ -5,10 +5,10 @@
 
 namespace datafeed {
 class App {
-    const char* filename;
-    const char* symbol;
+    const char* _data;
+    const char* _symbols;
 public: 
-    App(const char* filename, const char* symbol);
+    App(const char* data, const char* symbols);
     void start();
 };
 }
