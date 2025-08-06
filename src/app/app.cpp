@@ -6,9 +6,10 @@
 
 namespace datafeed {
 
-void App::run() {
-    // MarketDataLoader loader = std::make_shared();
+App::App(const char* filename, const char* symbol):filename(filename), symbol(symbol) {}
+
+void App::start() {
     std::cout << "App running" << std::endl;
 }
 
-} // namespace riskengine
+}
