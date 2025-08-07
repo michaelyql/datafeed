@@ -11,8 +11,8 @@ int main(int argc, char* argv[]) {
         std::cout << "Usage: ./main <DATA_FILENAME> <STOCK_LOCATE_FILENAME>\n";
         exit(EXIT_FAILURE);
     }
-    const char* filename = argv[1];
-    const char* symbol = argv[2];
-    App app(filename, symbol);
+    const char* data = argv[1];
+    const char* symbols = argv[2];
+    App app(data, symbols);
     app.start();
 }
